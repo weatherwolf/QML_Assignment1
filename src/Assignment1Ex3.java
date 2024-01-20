@@ -87,7 +87,7 @@ public class Assignment1Ex3 {
 				travelExpr.addTerm(boolE, pE[i]);
 
 				// calculating the time to travel to an advanced evacuation center
-				double valueA = sA + 60*Functions.distA(x[i], y[i], x[city], y[city])/(vA);
+				double valueA = sA + 60*Functions.distA(x[i], y[i], x[city], y[city])/(0.5*vA);
 				int boolA= Functions.binF(valueA, T);
 				travelExpr.addTerm(boolA, pA[i]);
 			}

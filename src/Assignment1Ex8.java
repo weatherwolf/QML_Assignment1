@@ -101,7 +101,7 @@ public class Assignment1Ex8  {
 				alphaExpr.addTerm(boolE, hE[i][j]);
 
 				// calculating the time to travel to an advanced evacuation center
-				double valueA = sA + 60*Functions.distA(x[i], y[i], x[j], y[j])/(vA);
+				double valueA = sA + 60*Functions.distA(x[i], y[i], x[j], y[j])/(0.5*vA);
 				int boolA= Functions.binF(valueA, T);
 				alphaExpr.addTerm(boolA, hA[i][j]);
             }
@@ -118,7 +118,7 @@ public class Assignment1Ex8  {
 				destinationExpr.addTerm(boolE, hE[i][j]);
 
 				// calculating the time to travel to an advanced evacuation center
-				double valueA = sA + 60*Functions.distA(x[i], y[i], x[j], y[j])/(vA);
+				double valueA = sA + 60*Functions.distA(x[i], y[i], x[j], y[j])/(0.5*vA);
 				int boolA= Functions.binF(valueA, 2*T);
 				destinationExpr.addTerm(boolA, hA[i][j]);
 
